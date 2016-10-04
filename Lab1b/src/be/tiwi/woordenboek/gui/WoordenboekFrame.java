@@ -7,6 +7,7 @@ package be.tiwi.woordenboek.gui;
 
 import be.tiwi.woordenboek.data.Woordenboek;
 import be.tiwi.woordenboek.data.WoordenboekDAO;
+import be.tiwi.woordenboek.impl.WoordenboekDAODict;
 import be.tiwi.woordenboek.impl.WoordenboekDAODummy;
 import java.util.List;
 import java.util.Vector;
@@ -26,7 +27,7 @@ public class WoordenboekFrame extends javax.swing.JFrame {
     public WoordenboekFrame() {
         initComponents();
         try {
-            woordenboekDAO = new WoordenboekDAODummy();
+            woordenboekDAO = new WoordenboekDAODict();
             woordenboeken = woordenboekDAO.getWoordenboeken();
             woordenboekLijst.setListData(new Vector(woordenboeken));
             if (woordenboeken.size() > 0) {

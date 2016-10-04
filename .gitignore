@@ -1,1 +1,6 @@
 *.class
+/EquationService/nbproject/private/
+/EquationWS/nbproject/private/
+/EquationWS/build/
+/TestEquationService/nbproject/private/
+/TestEquationService/build/
