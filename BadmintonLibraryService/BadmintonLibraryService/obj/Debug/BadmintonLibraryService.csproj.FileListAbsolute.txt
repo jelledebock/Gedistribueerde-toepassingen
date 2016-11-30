@@ -1,0 +1,8 @@
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\obj\Debug\BadmintonLibraryService.csprojResolveAssemblyReference.cache
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\bin\Debug\BadmintonLibraryService.dll.config
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\bin\Debug\BadmintonLibraryService.dll
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\bin\Debug\BadmintonLibraryService.pdb
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\bin\Debug\BadmintonInterface.dll
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\bin\Debug\BadmintonInterface.pdb
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\obj\Debug\BadmintonLibraryService.dll
+c:\users\nw4\documents\visual studio 2015\Projects\BadmintonLibraryService\BadmintonLibraryService\obj\Debug\BadmintonLibraryService.pdb
