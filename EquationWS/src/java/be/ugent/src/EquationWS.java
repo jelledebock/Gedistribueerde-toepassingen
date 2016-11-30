@@ -9,6 +9,7 @@ import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.ejb.Stateless;
+import javax.jws.HandlerChain;
 
 /**
  *
@@ -16,6 +17,7 @@ import javax.ejb.Stateless;
  */
 @WebService(serviceName = "EquationWS")
 @Stateless()
+@HandlerChain(file = "EquationWS_handler.xml")
 public class EquationWS {
 
     /**
@@ -23,7 +25,9 @@ public class EquationWS {
      */
     @WebMethod(operationName = "solveQuadratic")
     @SuppressWarnings("empty-statement")
-    public double[] solveQuadratic(@WebParam(name = "a") int a, @WebParam(name = "b") int b, @WebParam(name = "c") int c) {
+    public double[] solveQuadratic(@WebParam(name = "c0") int a, @WebParam(name = "c1") int b, @WebParam(name = "c2") int c) {
+        if(a==0)
+            throw new IllegalArgumentException("Cannot be 0.");
         int discriminant = b*b-4*a*c;
         double[] solutions={};
         
