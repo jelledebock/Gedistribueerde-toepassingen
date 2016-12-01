@@ -35,7 +35,7 @@ public class Quiz {
             RowSetFactory myRowSetFactory = RowSetProvider.newFactory();
             CachedRowSet quizRS = myRowSetFactory.createCachedRowSet();
 
-            quizRS.setDataSourceName("QuizPoolResource");
+            quizRS.setDataSourceName("jdbc/quiz");
 
             quizRS.setCommand("select id, question, answer from quiz");
             quizRS.execute();

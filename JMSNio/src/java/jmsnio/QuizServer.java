@@ -6,8 +6,9 @@
 package jmsnio;
 
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  *
@@ -22,8 +23,11 @@ public class QuizServer {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException, Exception {
         // TODO code application logic here
         System.out.println("Hallo from QuizServer");
-        Quiz quiz = new Quiz();
-        System.out.println(quiz.getQuestion().getQuestion());
+        ExecutorService executor = Executors.newCachedThreadPool();
+        QuestionManager questionManager = new QuestionManager();
+        
+        executor.execute(new ClientServer(questionManager));
+        executor.execute(questionManager);
     }
     
 }
